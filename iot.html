@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>XDevs Home Page</title>
+        <link rel="icon" href="/images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="/js/infinite-jekyll.js"></script>
+        <script src="/js/search.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div id="navbar" class="nav navbar-collapse collapse">
+            <ul class="nav navbar-nav text-center">
+                
+                
+                
+
+                
+
+                <li><a href="/chat.html" class="" >Blaab.la</a></li>
+
+                
+                
+                
+
+                
+
+                <li><a href="/hdlive.html" class="" >HD Live</a></li>
+
+                
+                
+                
+
+                
+
+                <li><a href="/iot.html" class=" active" >Internet of Things</a></li>
+
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right" >
+                <form class="navbar-form" action="/search" method="get">
+                    <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
+                </form>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        IOT Page
+
+<div class="container text-center">
+    <ul class="list-unstyled">
+        
+            
+                <li class="">
+                    <a href=" /iot/2016/12/22/welcome-to-jekyll.html "> Welcome to XCEPTIONAL devs page! </a>
+                    <p>This is a test post for the IOT section. :D
+
+</p>
+                </li>
+            
+        
+            
+        
+            
+        
+            
+                <li class="">
+                    <a href=" /iot/2016/12/22/welcome-to-iot.html "> IOT another example post! </a>
+                    <p>Welcome at IOT page!
+
+We are serving the best p...</p>
+                </li>
+            
+        
+            
+                <li class="">
+                    <a href=" /iot/2016/12/22/say-hello-second.html "> IOT Example post! </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisc...</p>
+                </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </ul>
+</div>
+
+
+<div class="infinite-spinner"></div>
+
+<script type="text/javascript">
+    $(function() {
+        $('#search-query').lunrSearch({
+            indexUrl  : 'iot-posts.json',           // url for the .json file containing search index data
+            results   : '#search-results',          // selector for containing search results element
+            template  : '#search-results-template', // selector for Mustache.js template
+            titleMsg  : '<h1>Search results<h1>',   // message attached in front of results (can be empty)
+            emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
+        });
+    });
+</script>
+        <div class = "container text-center">
+    <div class="row col-sm-12">
+        <p class="text-uppercase"><strong>xceptional development</strong></p>
+    </div>
+    <div class="row col-sm-12">
+        <p class="small text-uppercase">minden tartalom © copyright 2017 xceptional development kft. minden jog fenntartva</p>
+    </div>
+</div>
+    </body>
+</html>
