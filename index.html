@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>XDevs Home Page</title>
-        <link rel="icon" href="/images/favicon.ico">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="icon" href="images/favicon.ico">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="css/ie10-viewport-bug-workaround.css" >
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -16,57 +16,353 @@
         <script src="/js/search.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="css/animate.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Sans:400,400i,700,700i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+
+
     </head>
     <body>
-        <nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
-        <div id="navbar" class="nav navbar-collapse collapse">
-            <ul class="nav navbar-nav text-center">
-                
-                
-                
-
-                
-
-                <li><a href="/chat.html" class="" >Blaab.la</a></li>
-
-                
-                
-                
-
-                
-
-                <li><a href="/hdlive.html" class="" >HD Live</a></li>
-
-                
-                
-                
-
-                
-
-                <li><a href="/iot.html" class="" >Internet of Things</a></li>
-
-                
-            </ul>
-            <ul class="nav navbar-nav navbar-right" >
-                <form class="navbar-form" action="/search" method="get">
-                    <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
-                </form>
-            </ul>
+        <div id="sitepage">
+            <header class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <a href="/">
+                    <div class="logo">
+                        <img class="img-responsive" src="images/logo.png" alt="logo">
+                    </div>
+                </a>
+                <div class="banner">
+                    <img src="images/banner.jpg" alt="banner">
+                </div>
+            </div>
         </div>
     </div>
-</nav>
+</header>
 
-        <div class="container">
-    Index page
-</div>
-        <div class = "container text-center">
-    <div class="row col-sm-12">
-        <p class="text-uppercase"><strong>xceptional development</strong></p>
+ <div class="container">
+     <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <div class="language-block">
+                <ul>
+                    <li><a href="javascript:;">Hu</a></li>
+                    <li><a href="javascript:;">En</a></li>
+                    <li><a href="javascript:;">De</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="row col-sm-12">
-        <p class="small text-uppercase">minden tartalom © copyright 2017 xceptional development kft. minden jog fenntartva</p>
+
+    <div class="row service">
+        
+            <div class="col-xs-6 col-sm-4 col-md-4">
+                <div class="service-type">
+                    <a href="/chat.html">
+                        <div class="service-image">
+                            <img src="images/service-2.jpg" alt="service">
+                            <div class="service-logo animated slideInDown">
+                                <img src="images/service-2-logo.png" alt="logo">
+                            </div>
+                        </div>
+                    </a>
+                    <h1>Blaab.la</h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    </p>
+                </div>
+            </div>
+        
+            <div class="col-xs-6 col-sm-4 col-md-4">
+                <div class="service-type">
+                    <a href="/hdlive.html">
+                        <div class="service-image">
+                            <img src="images/service-1.jpg" alt="service">
+                            <div class="service-logo animated slideInDown">
+                                <img src="images/service-1-logo.png" alt="logo">
+                            </div>
+                        </div>
+                    </a>
+                    <h1>HD Live</h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    </p>
+                </div>
+            </div>
+        
+            <div class="col-xs-6 col-sm-4 col-md-4">
+                <div class="service-type">
+                    <a href="/iot.html">
+                        <div class="service-image">
+                            <img src="images/service-3.jpg" alt="service">
+                            <div class="service-logo animated slideInDown">
+                                <img src="images/service-3-logo.png" alt="logo">
+                            </div>
+                        </div>
+                    </a>
+                    <h1>Internet of Things</h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    </p>
+                </div>
+            </div>
+        
     </div>
 </div>
+
+<div id="main">
+    <div class="introduction">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <h1>Bemutatkozás</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="records">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <h1>Megtekintett bejegyzések</h1>
+                <p>segítünk, hogy megtaláld azokat a bejegyzéseket amiket korábban már olvastál</p>
+                <ul class="row">
+                    <li class="col-sm-4 col-md-4">
+                        <div class="record-list">
+                            <h4>Lorem Ipsum is simply dummy text</h4>
+                            <div class="row">
+                                <div class="topic">
+                                    <div class="col-xs-4 col-sm-4 col-md-4">
+                                        2016.06.01.
+                                    </div>
+                                    <div class="col-xs-8 col-sm-8 col-md-8 text-right">
+                                        Hd Live
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="record-edit">
+                                <span class="delete">X</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-4 col-md-4">
+                        <div class="record-list">
+                            <h4>Lorem Ipsum is simply dummy text</h4>
+                            <div class="row">
+                                <div class="topic">
+                                    <div class="col-xs-4 col-sm-4 col-md-4">
+                                        2016.06.01.
+                                    </div>
+                                    <div class="col-xs-8 col-sm-8 col-md-8 text-right">
+                                        Internet of things
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="record-edit">
+                                <span class="delete">X</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-4 col-md-4">
+                        <div class="record-list">
+                            <h4>Lorem Ipsum is simply dummy text</h4>
+                            <div class="row">
+                                <div class="topic">
+                                    <div class="col-xs-4 col-sm-4 col-md-4">
+                                        2016.06.01.
+                                    </div>
+                                    <div class="col-xs-8 col-sm-8 col-md-8 text-right">
+                                        Internet of things
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="record-edit">
+                                <span class="delete">X</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="col-sm-4 col-md-4">
+                        <div class="record-list">
+                            <h4>Lorem Ipsum is simply dummy text</h4>
+                            <div class="row">
+                                <div class="topic">
+                                    <div class="col-xs-4 col-sm-4 col-md-4">
+                                        2016.06.01.
+                                    </div>
+                                    <div class="col-xs-8 col-sm-8 col-md-8 text-right">
+                                        Blaab.la
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="record-edit">
+                                <span class="delete">X</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-4 col-md-4">
+                        <div class="record-list">
+                            <h4>Lorem Ipsum is simply dummy text</h4>
+                            <div class="row">
+                                <div class="topic">
+                                    <div class="col-xs-4 col-sm-4 col-md-4">
+                                        2016.06.01.
+                                    </div>
+                                    <div class="col-xs-8 col-sm-8 col-md-8 text-right">
+                                        Blaab.la
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="record-edit">
+                                <span class="delete">X</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-4 col-md-4">
+                        <div class="record-list">
+                            <h4>Lorem Ipsum is simply dummy text</h4>
+                            <div class="row">
+                                <div class="topic">
+                                    <div class="col-xs-4 col-sm-4 col-md-4">
+                                        2016.06.01.
+                                    </div>
+                                    <div class="col-xs-8 col-sm-8 col-md-8 text-right">
+                                        Blaab.la
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="record-edit">
+                                <span class="delete">X</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="col-sm-4 col-md-4">
+                        <div class="record-list">
+                            <h4>Lorem Ipsum is simply dummy text</h4>
+                            <div class="row">
+                                <div class="topic">
+                                    <div class="col-xs-4 col-sm-4 col-md-4">
+                                        2016.06.01.
+                                    </div>
+                                    <div class="col-xs-8 col-sm-8 col-md-8 text-right">
+                                        Hd Live
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="record-edit">
+                                <span class="delete">X</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-sm-4 col-md-4">
+                        <div class="record-list">
+                            <h4>Lorem Ipsum is simply dummy text</h4>
+                            <div class="row">
+                                <div class="topic">
+                                    <div class="col-xs-4 col-sm-4 col-md-4">
+                                        2016.06.01.
+                                    </div>
+                                    <div class="col-xs-8 col-sm-8 col-md-8 text-right">
+                                        Hd Live
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="record-edit">
+                                <span class="delete">X</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="relationship">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <h1>Kapcsolat</h1>
+                <p>írj nekünk üzenetet</p>
+                <div class="row">
+                    <div class="col-sm-offset-1 col-sm-5 col-md-offset-1 col-md-5">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="Név">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="email" placeholder="E-mail cím">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" rows="11"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn button">Üzenet elküldése</button>
+                            </div>
+                        </form>
+                        <div class="g-recaptcha" data-sitekey="6Lc8WhAUAAAAAH7OqPOab-PHr047FxISY83nXCUc"></div>
+                    </div>
+                    <div class="col-sm-offset-1 col-sm-5 col-md-offset-1 col-md-5">
+                        <div class="contact-details">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                        <span class="tab-icon">
+                                            <img src="images/at-sign.png" alt="at sign">
+                                        </span>
+                                    <h3>E-mail cím</h3>
+                                    <span><a href="mailto:lorem.ipsum@xdevs.hu">lorem.ipsum@xdevs.hu</a></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                        <span class="tab-icon">
+                                            <img src="images/phone-icon.png" alt="phone">
+                                        </span>
+                                    <h3>Telefonszám</h3>
+                                    <span>+36 30 123 4567</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+            <footer class="sitepage-footer">
+    <div class="container">
+        <div class="content">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                    <div class="footer-link">
+                        minden tartalom © copyright 2017 xceptional development kft. minden jog fenntartva
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+        </div>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </body>
 </html>
