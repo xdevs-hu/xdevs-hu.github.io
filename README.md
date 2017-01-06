@@ -1,1 +1,0 @@
-# xdevs-hu.githubpages.io
