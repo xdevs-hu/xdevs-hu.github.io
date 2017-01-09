@@ -709,6 +709,61 @@ footer.sitepage-footer a{color:#fff;}
 	transition:all 0.5s ease-in-out 0s; -webkit-transition:all 0.5s ease-in-out 0s;
 }*/
 
+.detailed-story .carousel-inner {
+    background: #ececec;
+}
+.detailed-story .carousel-control.left, .detailed-story .carousel-control.right{
+    background-image:none;
+    background-repeat:no-repeat;
+    background:#d8d8d8;
+}
+.detailed-story .carousel-control{
+    width:40px;
+    opacity:0.8;
+}
+.detailed-story .carousel-inner .item {
+    height: 250px;
+    width: 100%;
+}
+.detailed-story .carousel-inner .item img {
+    height: 250px;
+    width: 100%;
+}
+.detailed-story .carousel-control .icon-prev, .detailed-story .carousel-control .icon-next, .detailed-story .carousel-control .fa-angle-left, .detailed-story .carousel-control .fa-angle-right {
+    display: inline-block;
+    margin-top: -10px;
+    position: absolute;
+    top: 45%;
+    z-index: 5;
+}
+.detailed-story .carousel-control .icon-prev, .detailed-story .carousel-control .fa-angle-left {
+    left: 50%;
+    margin-left: -10px;
+}
+.detailed-story .carousel-control .fa-angle-left, .detailed-story .carousel-control .fa-angle-right, .detailed-story .carousel-control .icon-prev, .detailed-story .carousel-control .icon-next {
+    font-size: 30px;
+    height: 30px;
+    margin-top: -10px;
+    width: 30px;
+}
+.detailed-story .carousel-control .fa-angle-left, .detailed-story .carousel-control .fa-angle-right, .detailed-story .carousel-control .icon-prev, .detailed-story .carousel-control .icon-next {
+    font-size: 30px;
+    height: 30px;
+    margin-top: -10px;
+    width: 0;
+}
+.detailed-story .right.carousel-control {
+    padding-right: 12px;
+}
+
+.detailed-story .carousel-control .fa-angle-left, .detailed-story .carousel-control .icon-prev {
+    margin-left: -10px;
+}
+
+.detailed-story .carousel-control .fa-angle-left, .detailed-story .carousel-control .fa-angle-right {
+    color: #fff;
+    font-size: 50px;
+}
 
 @media (max-width: 1280px){
 
@@ -861,4 +916,16 @@ footer.sitepage-footer a{color:#fff;}
 
 @media (max-width: 320px){
 
+}
+
+.infinite-spinner {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #333;
+    margin: 60px auto;
+
+    -webkit-animation: scaleout 1.0s infinite ease-in-out;
+    animation: scaleout 1.0s infinite ease-in-out;
 }

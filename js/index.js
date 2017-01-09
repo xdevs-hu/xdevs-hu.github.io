@@ -6,7 +6,6 @@ jQuery("#sendButton").click(function(){
     } else if (!grecaptcha.getResponse()){
         displayErrorMessage("Please complete the capthca!");
     } else {
-
         jQuery.ajax({
             type: "POST",
             url: url,
