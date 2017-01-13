@@ -76,6 +76,10 @@ header.sitepage-header {background:#6cabe9; color: #fff; position:relative; widt
 
 .container:after {clear:both;}
 
+.clickable {
+    cursor: pointer
+}
+
 .left:last-child:after {clear:both;}
 
 .right:last-child:after {clear:both;}
@@ -190,6 +194,9 @@ footer.sitepage-footer a{color:#fff;}
     margin-top: 57px;
 }
 
+.initially-hidden {
+    display: none
+}
 
 #main .container-fluid {
     padding-left: 0;
@@ -596,13 +603,30 @@ footer.sitepage-footer a{color:#fff;}
 .search-nav {
     background: #345564;
     box-sizing: border-box;
-    color: #fff;
+    color:white;
+    border: none;
     float: left;
     font-family: "PT Sans",sans-serif;
     font-weight: 400;
     padding: 8px 8px 8px 20px;
     font-size:18px;
     width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: white;
+}
+
+:-ms-input-placeholder {
+    color: white;
 }
 
 .recent-post.search .summary {
@@ -704,6 +728,14 @@ footer.sitepage-footer a{color:#fff;}
     float: right;
     font-weight: 700;
 }
+
+.recent-summary {
+    color: #a8a8a8;
+    display: block;
+    font-size: 15px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+}
 /*.post-comment .details-nav:hover::after {
 	background:none;
 	transition:all 0.5s ease-in-out 0s; -webkit-transition:all 0.5s ease-in-out 0s;
@@ -765,6 +797,10 @@ footer.sitepage-footer a{color:#fff;}
     font-size: 50px;
 }
 
+/*.carousel.slide {
+    display: none;
+}*/
+
 @media (max-width: 1280px){
 
 }
@@ -800,6 +836,13 @@ footer.sitepage-footer a{color:#fff;}
     .post-comment .post-image span {
         display: block;
     }
+
+    /*.gallery ul {
+        display: none;
+    }
+    .carousel.slide {
+        display:block;
+    }*/
 
 }
 
@@ -910,6 +953,13 @@ footer.sitepage-footer a{color:#fff;}
     }
     .add-comment h3, .add-comment h3 span, .post-block h3 {
         font-size: 16px;
+    }
+
+    .detailed-story .carousel-inner .item {
+        height:auto;
+    }
+    .detailed-story .carousel-inner .item img {
+        height:auto;
     }
 
 }

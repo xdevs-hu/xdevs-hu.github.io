@@ -21,8 +21,7 @@ jQuery("#sendButton").click(function(){
                 if (data.responseJSON && data.responseJSON.msg) {
                     displayErrorMessage(data.responseJSON.msg);
                 } else {
-                    //status:0 if host not reached or not responded
-                    displayErrorMessage("An error occured: " + data.status + " " + data.statusText);
+                    displayErrorMessage("Mail service is currently not available!");
                 }
             }
         });

@@ -1,0 +1,66 @@
+{
+
+"/iot/2017/01/12/happy-new-year" : {
+"id" : "/iot/2017/01/12/happy-new-year",
+"title" : "Happy New Year!",
+"date" : "2017. 01. 12."
+}
+,
+
+"/iot/2016/12/22/welcome-to-jekyll" : {
+"id" : "/iot/2016/12/22/welcome-to-jekyll",
+"title" : "Welcome to XCEPTIONAL devs page!",
+"date" : "2016. 12. 22."
+}
+,
+
+"/hdlive/2016/12/22/welcome-to-jekyll" : {
+"id" : "/hdlive/2016/12/22/welcome-to-jekyll",
+"title" : "Welcome to XCEPTIONAL devs page!",
+"date" : "2016. 12. 22."
+}
+,
+
+"/blaabla/2016/12/22/welcome-to-jekyll" : {
+"id" : "/blaabla/2016/12/22/welcome-to-jekyll",
+"title" : "Welcome to XCEPTIONAL devs page!",
+"date" : "2016. 12. 22."
+}
+,
+
+"/iot/2016/12/22/welcome-to-iot" : {
+"id" : "/iot/2016/12/22/welcome-to-iot",
+"title" : "IOT another example post!",
+"date" : "2016. 12. 22."
+}
+,
+
+"/iot/2016/12/22/say-hello-second" : {
+"id" : "/iot/2016/12/22/say-hello-second",
+"title" : "IOT Example post!",
+"date" : "2016. 12. 22."
+}
+,
+
+"/hdlive/2016/12/22/welcome-hd-live" : {
+"id" : "/hdlive/2016/12/22/welcome-hd-live",
+"title" : "HDLive Example post!",
+"date" : "2016. 12. 22."
+}
+,
+
+"/blaabla/2016/12/22/welcome-hd-live" : {
+"id" : "/blaabla/2016/12/22/welcome-hd-live",
+"title" : "BlaaBla another example post!",
+"date" : "2016. 12. 22."
+}
+,
+
+"/blaabla/2016/12/22/say-hello-second" : {
+"id" : "/blaabla/2016/12/22/say-hello-second",
+"title" : "BLAAB.LA Example post!",
+"date" : "2016. 12. 22."
+}
+
+
+}

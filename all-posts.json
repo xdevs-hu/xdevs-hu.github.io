@@ -1,23 +1,73 @@
 {
-"posts" : [
+    
+        "/iot/2017/01/12/happy-new-year" : {
+            "title" : "Happy New Year!",
+            "date" : "2017-01-12 16:55:10 +0100"
+        }
 
-"/iot/2016/12/22/welcome-to-jekyll.html",
+      ,
+    
+        "/iot/2016/12/22/welcome-to-jekyll" : {
+            "title" : "Welcome to XCEPTIONAL devs page!",
+            "date" : "2016-12-22 11:18:19 +0100"
+        }
 
-"/hdlive/2016/12/22/welcome-to-jekyll.html",
+      ,
+    
+        "/hdlive/2016/12/22/welcome-to-jekyll" : {
+            "title" : "Welcome to XCEPTIONAL devs page!",
+            "date" : "2016-12-22 11:18:19 +0100"
+        }
 
-"/blaabla/2016/12/22/welcome-to-jekyll.html",
+      ,
+    
+        "/blaabla/2016/12/22/welcome-to-jekyll" : {
+            "title" : "Welcome to XCEPTIONAL devs page!",
+            "date" : "2016-12-22 11:18:19 +0100"
+        }
 
-"/iot/2016/12/22/welcome-to-iot.html",
+      ,
+    
+        "/iot/2016/12/22/welcome-to-iot" : {
+            "title" : "IOT another example post!",
+            "date" : "2016-12-22 10:10:10 +0100"
+        }
 
-"/iot/2016/12/22/say-hello-second.html",
+      ,
+    
+        "/iot/2016/12/22/say-hello-second" : {
+            "title" : "IOT Example post!",
+            "date" : "2016-12-22 10:10:10 +0100"
+        }
 
-"/hdlive/2016/12/22/welcome-hd-live.html",
+      ,
+    
+        "/hdlive/2016/12/22/welcome-hd-live" : {
+            "title" : "HDLive Example post!",
+            "date" : "2016-12-22 10:10:10 +0100"
+        }
 
-"/blaabla/2016/12/22/welcome-hd-live.html",
+      ,
+    
+        "/blaabla/2016/12/22/welcome-hd-live" : {
+            "title" : "BlaaBla another example post!",
+            "date" : "2016-12-22 10:10:10 +0100"
+        }
 
-"/blaabla/2016/12/22/say-hello-second.html",
+      ,
+    
+        "/blaabla/2016/12/22/say-hello-second" : {
+            "title" : "BLAAB.LA Example post!",
+            "date" : "2016-12-22 10:10:10 +0100"
+        }
 
-"/hdlive/2016/12/21/say-hello-second.html"
+      ,
+    
+        "/hdlive/2016/12/21/say-hello-second" : {
+            "title" : "HDLive another example post!",
+            "date" : "2016-12-21 10:10:10 +0100"
+        }
 
-]
+      
+    
 }
