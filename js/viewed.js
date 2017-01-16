@@ -49,15 +49,20 @@ var visit = (function(){
         var outerContainer = jQuery("#viewed-outer-container");
         var more = jQuery("#viewed-more");
         var visitedPosts = visit.getAll();
-        if (visitedPosts) {
+        if (visitedPosts && visitedPosts.length > 0) {
             outerContainer.show();
             container.html('');
             if (!limit) {
+                if (visitedPosts.length > conf.limit) {
+                    more.show()
+                } else {
+                    more.hide();
+                }
                 container.loadTemplate("/templates/viewed.html", visitedPosts.reverse().splice(0, conf.limit));
             } else {
                 container.loadTemplate("/templates/viewed.html", visitedPosts.reverse());
+                more.hide();
             }
-            more.hide();
         } else {
             outerContainer.hide();
         }
