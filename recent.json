@@ -21,8 +21,8 @@
 }
 ,
 
-"/blaabla/2016/12/22/welcome-to-jekyll" : {
-"id" : "/blaabla/2016/12/22/welcome-to-jekyll",
+"/blaab.la/blaabla/2016/12/22/welcome-to-jekyll" : {
+"id" : "/blaab.la/blaabla/2016/12/22/welcome-to-jekyll",
 "title" : "Welcome to XCEPTIONAL devs page!",
 "date" : "2016. 12. 22."
 }
@@ -49,15 +49,15 @@
 }
 ,
 
-"/blaabla/2016/12/22/welcome-hd-live" : {
-"id" : "/blaabla/2016/12/22/welcome-hd-live",
+"/blaab.la/blaabla/2016/12/22/welcome-hd-live" : {
+"id" : "/blaab.la/blaabla/2016/12/22/welcome-hd-live",
 "title" : "BlaaBla another example post!",
 "date" : "2016. 12. 22."
 }
 ,
 
-"/blaabla/2016/12/22/say-hello-second" : {
-"id" : "/blaabla/2016/12/22/say-hello-second",
+"/blaab.la/blaabla/2016/12/22/say-hello-second" : {
+"id" : "/blaab.la/blaabla/2016/12/22/say-hello-second",
 "title" : "BLAAB.LA Example post!",
 "date" : "2016. 12. 22."
 }
