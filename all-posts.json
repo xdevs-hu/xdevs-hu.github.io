@@ -21,7 +21,7 @@
 
       ,
     
-        "/blaab.la/blaabla/2016/12/22/welcome-to-jekyll" : {
+        "/blaab.la/2016/12/22/welcome-to-jekyll" : {
             "title" : "Welcome to XCEPTIONAL devs page!",
             "date" : "2016-12-22 11:18:19 +0100"
         }
@@ -49,14 +49,14 @@
 
       ,
     
-        "/blaab.la/blaabla/2016/12/22/welcome-hd-live" : {
+        "/blaab.la/2016/12/22/welcome-hd-live" : {
             "title" : "BlaaBla another example post!",
             "date" : "2016-12-22 10:10:10 +0100"
         }
 
       ,
     
-        "/blaab.la/blaabla/2016/12/22/say-hello-second" : {
+        "/blaab.la/2016/12/22/say-hello-second" : {
             "title" : "BLAAB.LA Example post!",
             "date" : "2016-12-22 10:10:10 +0100"
         }

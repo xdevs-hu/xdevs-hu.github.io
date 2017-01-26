@@ -27,13 +27,15 @@ var visit = (function(){
             store.set(conf.key, stored);
         } else {
             var arr = visit.getAll();
-            if (!stored[post.id]) {
-                if (arr.length === conf.maxStore) {
-                    delete stored[arr.reverse()[0].id];
-                }
-                stored[post.id] = post;
-                store.set(conf.key, stored);
+            if (arr.length === conf.maxStore) {
+                delete stored[arr.reverse()[0].id];
             }
+            if (stored[post.id]) {
+                delete stored[post.id];
+            }
+            stored[post.id] = post;
+            store.set(conf.key, stored);
+
         }
     };
 
@@ -41,10 +43,17 @@ var visit = (function(){
         var stored = store.get(conf.key);
         delete stored[jQuery(elem).attr('parent-id')];
         store.set(conf.key, stored);
-        visit.render();
     };
 
-    visit.render = function (limit) {
+    visit.renderIndex = function () {
+        render(null, "/templates/viewed_index.html");
+    };
+
+    visit.renderPost = function (limit) {
+        render(limit, "/templates/viewed.html");
+    };
+
+    function render(limit, template) {
         var container = jQuery("#viewed-container");
         var outerContainer = jQuery("#viewed-outer-container");
         var more = jQuery("#viewed-more");
@@ -58,30 +67,28 @@ var visit = (function(){
                 } else {
                     more.hide();
                 }
-                container.loadTemplate("/templates/viewed.html", visitedPosts.reverse().splice(0, conf.limit));
+                container.loadTemplate(template, visitedPosts.reverse().splice(0, conf.limit));
             } else {
-                container.loadTemplate("/templates/viewed.html", visitedPosts.reverse());
+                container.loadTemplate(template, visitedPosts.reverse());
                 more.hide();
             }
         } else {
             outerContainer.hide();
         }
-    };
+    }
 
     function getPageObject() {
         return {
             id :  window.location.pathname,
             title: jQuery("#title").text(),
             date: jQuery("#date").text(),
-            visited: new Date()
+            visited: new Date(),
+            category: jQuery("#category").text().split(' ')[0]
         }
     }
 
     return visit;
 }());
-
-
-visit.render();
 
 
 falserver.getRecent(function(posts) {

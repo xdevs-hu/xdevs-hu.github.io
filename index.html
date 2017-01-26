@@ -26,7 +26,8 @@
         <script src="https://embed.widgetpack.com/widget.js" async></script>
 
     </head>
-    <body >
+    <body  onload="visit.renderIndex()" 
+    >
         <div id="sitepage">
             <div class="full-width-box">
     <div class="banner">
@@ -125,159 +126,13 @@
     </div>
 </div>
 
-<div class="records">
+<div class="records" id="viewed-outer-container">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12">
                 <h1>Megtekintett bejegyzések</h1>
                 <p>segítünk, hogy megtaláld azokat a bejegyzéseket amiket korábban már olvastál</p>
-                <ul class="row">
-                    <li class="col-sm-4 col-md-4">
-                        <div class="record-list">
-                            <h4>Lorem Ipsum is simply dummy text</h4>
-                            <div class="row">
-                                <div class="topic">
-                                    <div class="col-xs-4 col-sm-4 col-md-4">
-                                        2016.06.01.
-                                    </div>
-                                    <div class="col-xs-8 col-sm-8 col-md-8 text-right">
-                                        Hd Live
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="record-edit">
-                                <span class="delete">X</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-sm-4 col-md-4">
-                        <div class="record-list">
-                            <h4>Lorem Ipsum is simply dummy text</h4>
-                            <div class="row">
-                                <div class="topic">
-                                    <div class="col-xs-4 col-sm-4 col-md-4">
-                                        2016.06.01.
-                                    </div>
-                                    <div class="col-xs-8 col-sm-8 col-md-8 text-right">
-                                        Internet of things
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="record-edit">
-                                <span class="delete">X</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-sm-4 col-md-4">
-                        <div class="record-list">
-                            <h4>Lorem Ipsum is simply dummy text</h4>
-                            <div class="row">
-                                <div class="topic">
-                                    <div class="col-xs-4 col-sm-4 col-md-4">
-                                        2016.06.01.
-                                    </div>
-                                    <div class="col-xs-8 col-sm-8 col-md-8 text-right">
-                                        Internet of things
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="record-edit">
-                                <span class="delete">X</span>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="col-sm-4 col-md-4">
-                        <div class="record-list">
-                            <h4>Lorem Ipsum is simply dummy text</h4>
-                            <div class="row">
-                                <div class="topic">
-                                    <div class="col-xs-4 col-sm-4 col-md-4">
-                                        2016.06.01.
-                                    </div>
-                                    <div class="col-xs-8 col-sm-8 col-md-8 text-right">
-                                        Blaab.la
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="record-edit">
-                                <span class="delete">X</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-sm-4 col-md-4">
-                        <div class="record-list">
-                            <h4>Lorem Ipsum is simply dummy text</h4>
-                            <div class="row">
-                                <div class="topic">
-                                    <div class="col-xs-4 col-sm-4 col-md-4">
-                                        2016.06.01.
-                                    </div>
-                                    <div class="col-xs-8 col-sm-8 col-md-8 text-right">
-                                        Blaab.la
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="record-edit">
-                                <span class="delete">X</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-sm-4 col-md-4">
-                        <div class="record-list">
-                            <h4>Lorem Ipsum is simply dummy text</h4>
-                            <div class="row">
-                                <div class="topic">
-                                    <div class="col-xs-4 col-sm-4 col-md-4">
-                                        2016.06.01.
-                                    </div>
-                                    <div class="col-xs-8 col-sm-8 col-md-8 text-right">
-                                        Blaab.la
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="record-edit">
-                                <span class="delete">X</span>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="col-sm-4 col-md-4">
-                        <div class="record-list">
-                            <h4>Lorem Ipsum is simply dummy text</h4>
-                            <div class="row">
-                                <div class="topic">
-                                    <div class="col-xs-4 col-sm-4 col-md-4">
-                                        2016.06.01.
-                                    </div>
-                                    <div class="col-xs-8 col-sm-8 col-md-8 text-right">
-                                        Hd Live
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="record-edit">
-                                <span class="delete">X</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-sm-4 col-md-4">
-                        <div class="record-list">
-                            <h4>Lorem Ipsum is simply dummy text</h4>
-                            <div class="row">
-                                <div class="topic">
-                                    <div class="col-xs-4 col-sm-4 col-md-4">
-                                        2016.06.01.
-                                    </div>
-                                    <div class="col-xs-8 col-sm-8 col-md-8 text-right">
-                                        Hd Live
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="record-edit">
-                                <span class="delete">X</span>
-                            </div>
-                        </div>
-                    </li>
+                <ul class="row" id="viewed-container">
                 </ul>
             </div>
         </div>

@@ -26,16 +26,21 @@
         <script src="https://embed.widgetpack.com/widget.js" async></script>
 
     </head>
-    <body  onload="visit.visit()" >
+    <body  onload="visit.visit();visit.renderPost()"
+          
+    >
         <div id="sitepage">
             <div class="full-width-box inner">
     <div class="banner">
         <img src="/images/banner-inner.jpg" alt="banner">
     </div>
+    <div class="banner mobile">
+        <img src="/images/banner-topic-m.jpg" alt="banner">
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                <h1>HD Live <span>Topic</span></h1>
+                <h1 id="category"> iot <span>Topic</span></h1>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                 <div class="logo inner">
@@ -53,6 +58,7 @@
         </div>
     </div>
 </div>
+<script onload="visit.renderPost();"></script>
 <div id="main">
     <div class="container">
         <div class="row">
@@ -131,7 +137,7 @@
 
 <script type="text/javascript">
     wpac_init = window.wpac_init || [];
-    wpac_init.push({widget: 'Comment', id: 3130, url: "https://xdevs-hu.github.io/iot/2016/12/22/say-hello-second.html"});
+    wpac_init.push({widget: 'Comment', id: 3130, url: "http://localhost:4000/iot/2016/12/22/say-hello-second.html"});
     (function () {
         if ('WIDGETPACK_LOADED' in window) return;
         WIDGETPACK_LOADED = true;
@@ -179,7 +185,7 @@
                         </div>
                         <div class="row initially-hidden" id="viewed-more">
                             <div class="col-sm-12 col-md-12">
-                                <a class="clickable" onclick="visit.render(true)">
+                                <a class="clickable" onclick="visit.renderPost(true)">
                                     <div class="more">
                                         <h4><i class="fa fa-angle-down" aria-hidden="true"></i>
                                         </h4>
