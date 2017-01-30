@@ -323,7 +323,7 @@ footer.sitepage-footer a{color:#fff;}
 .record-edit{
     display:none;
 }
-.record-list:hover > .record-edit{
+.record-container:hover > .record-edit{
     width:100%;
     height:100%;
     color: #fff;
@@ -956,7 +956,7 @@ footer.sitepage-footer a{color:#fff;}
     .footer-logo > img {
         width: 100%;
     }
-    .record-list:hover > .record-edit {
+    .record-container:hover > .record-edit {
         border-bottom: none;
     }
     .delete {

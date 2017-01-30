@@ -1,14 +1,14 @@
-<li class="col-sm-4 col-md-4">
-    <div class="record-list">
-        <a data-href="id"><h4 data-content="title"></h4></a>
+<li class="col-sm-4 col-md-4 record-container">
+    <div class="record-list clickable" id="id" onclick="go(this.id)">
+        <h4 data-content="title" ></h4>
         <div class="row">
             <div class="topic">
                 <div class="col-xs-4 col-sm-4 col-md-4" data-content="date"></div>
                 <div class="col-xs-8 col-sm-8 col-md-8 text-right" data-content="category"></div>
             </div>
         </div>
-        <div class="record-edit">
-            <span onclick="visit.clear(this);visit.renderIndex();" class="delete clickable" data-template-bind='[{"attribute": "parent-id", "value": "id"}]'>X</span>
-        </div>
+    </div>
+    <div class="record-edit">
+        <span onclick="visit.clear(this);visit.renderIndex();" class="delete clickable" data-template-bind='[{"attribute": "parent-id", "value": "id"}]'>X</span>
     </div>
 </li>

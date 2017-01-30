@@ -36,6 +36,10 @@ function displayErrorMessage (message) {
     displayNoty(message, 'error');
 }
 
+function go (path) {
+    window.location = path;
+}
+
 function displayNoty(message, type) {
     noty({
         text: message,
