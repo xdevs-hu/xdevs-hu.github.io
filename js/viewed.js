@@ -39,7 +39,8 @@ var visit = (function(){
         }
     };
 
-    visit.clear = function (elem) {
+    visit.clear = function (event, elem) {
+        event.stopPropagation();
         var stored = store.get(conf.key);
         delete stored[jQuery(elem).attr('parent-id')];
         store.set(conf.key, stored);
