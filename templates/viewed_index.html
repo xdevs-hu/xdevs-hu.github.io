@@ -1,5 +1,5 @@
-<li class="col-sm-4 col-md-4 record-container clickable" data-id="id" onclick="go(this.id)">
-    <div class="record-list">
+<li class="col-sm-6 col-md-4 record-container">
+    <div class="record-list clickable" id="id" onclick="go(this.id)">
         <h4 data-content="title" ></h4>
         <div class="row">
             <div class="topic">
@@ -9,6 +9,6 @@
         </div>
     </div>
     <div class="record-edit">
-        <span onclick="visit.clear(event, this);visit.renderIndex();" class="delete clickable" data-template-bind='[{"attribute": "parent-id", "value": "id"}]'>X</span>
+        <span onclick="visit.clear(this);visit.renderIndex();" class="delete clickable" data-template-bind='[{"attribute": "parent-id", "value": "id"}]'>X</span>
     </div>
 </li>

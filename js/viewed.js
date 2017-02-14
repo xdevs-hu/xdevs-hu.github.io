@@ -39,8 +39,7 @@ var visit = (function(){
         }
     };
 
-    visit.clear = function (event, elem) {
-        event.stopPropagation();
+    visit.clear = function (elem) {
         var stored = store.get(conf.key);
         delete stored[jQuery(elem).attr('parent-id')];
         store.set(conf.key, stored);
@@ -54,13 +53,18 @@ var visit = (function(){
         var visitedPosts = visit.getAll();
         if (visitedPosts && visitedPosts.length > 0) {
             outerContainer.show();
-            container.loadTemplate(template, visitedPosts.reverse());
-            if (animated) {
-                outerContainer.css('height', 'auto');
-                var fullHeight = outerContainer.height();
-                outerContainer.height(0);
-                outerContainer.animate({height: fullHeight}, 500);
-            }
+            container.loadTemplate(template, visitedPosts.reverse(), {success: function () {
+                if (animated) {
+                    outerContainer.css('height', 'auto');
+                    var fullHeight = outerContainer.height();
+                    outerContainer.height(0);
+                    outerContainer.animate({height: fullHeight},
+                        500,
+                        function () {
+                            outerContainer.css({height: ''});
+                        }
+                    );                }
+            }});
         } else {
             outerContainer.hide();
         }
@@ -85,13 +89,19 @@ var visit = (function(){
                 }
                 container.loadTemplate(template, visitedPosts.reverse().splice(0, conf.limit));
             } else {
+                container.show();
                 var originalHeight = outerContainer.height();
                 container.loadTemplate(template, visitedPosts.reverse());
                 outerContainer.css('height', 'auto');
                 var fullHeight = outerContainer.height();
                 outerContainer.height(originalHeight);
                 more.addClass("animated fadeOut");
-                outerContainer.animate({height: fullHeight}, 500);
+                outerContainer.animate({height: fullHeight},
+                    500,
+                    function () {
+                        outerContainer.height('height', '');
+                    }
+                );
             }
         } else {
             outerContainer.hide();

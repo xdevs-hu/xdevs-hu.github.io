@@ -231,7 +231,7 @@ footer.sitepage-footer a{color:#fff;}
     text-align: right;
     margin-bottom: 0;
 }
-.language-block ul li a{
+.language-block ul li a {
     color: #fff;
 }
 
@@ -253,7 +253,7 @@ footer.sitepage-footer a{color:#fff;}
 .service-logo{
     display:none;
 }
-.service-image:hover > .service-logo{
+.service-image:hover > .service-logo {
     width:100%;
     height:100%;
     padding: 50px;
@@ -267,7 +267,7 @@ footer.sitepage-footer a{color:#fff;}
     top: 0;
     z-index:100;
 }
-.service-logo img{
+.service-logo img {
     width:auto;
 }
 
@@ -279,7 +279,7 @@ footer.sitepage-footer a{color:#fff;}
     text-transform: uppercase;
     font-size:30px;
 }
-.service-type p, .introduction p, .records p, .relationship p{
+.service-type p, .introduction p, .records p, .relationship p {
     font-family: 'PT Sans', sans-serif;
     font-weight:400;
     font-size:18px;
@@ -293,14 +293,14 @@ footer.sitepage-footer a{color:#fff;}
     width: 100%;
     text-align:center;
 }
-.introduction h1, .introduction p{
+.introduction h1, .introduction p {
     color:#fff;
 }
 
 .records {
     background:#f1f2f2;
-    display: none;
 }
+
 .records h1, .relationship h1 {
     margin-bottom: 0;
 }
@@ -320,10 +320,10 @@ footer.sitepage-footer a{color:#fff;}
     margin-bottom: 20px;
     position: relative; cursor:pointer;
 }
-.record-edit{
+.record-edit {
     display:none;
 }
-.record-container:hover > .record-edit{
+.record-container:hover > .record-edit {
     width:100%;
     height:100%;
     color: #fff;
@@ -355,9 +355,10 @@ footer.sitepage-footer a{color:#fff;}
     color: #a8a8a8;
     font-size: 13px;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
-.relationship{
+.relationship {
     background:#fff;
 }
 
@@ -762,6 +763,10 @@ footer.sitepage-footer a{color:#fff;}
     margin: 0;
 }
 
+#viewed-container {
+    margin-bottom: 25px;
+}
+
 .no-margin {
     margin: 0;
 }
@@ -783,11 +788,11 @@ footer.sitepage-footer a{color:#fff;}
     opacity:0.8;
 }
 .detailed-story .carousel-inner .item {
-    height: 250px;
+    height: 300px;
     width: 100%;
 }
 .detailed-story .carousel-inner .item img {
-    height: 250px;
+    height: 300px;
     width: 100%;
 }
 .detailed-story .carousel-control .icon-prev, .detailed-story .carousel-control .icon-next, .detailed-story .carousel-control .fa-angle-left, .detailed-story .carousel-control .fa-angle-right {
@@ -846,6 +851,13 @@ footer.sitepage-footer a{color:#fff;}
         width: 55%;
     }
 
+    .detailed-story .carousel-inner .item {
+        height:250px;
+    }
+    .detailed-story .carousel-inner .item img {
+        height:250px;
+    }
+
 }
 
 @media (max-width: 767px){
@@ -865,6 +877,16 @@ footer.sitepage-footer a{color:#fff;}
     .post-comment .post-image span {
         display: block;
     }
+
+    .user-img + h3 {
+        padding-top: 18px;
+    }
+    /*.detailed-story .carousel-inner .item {
+        height:200px;
+    }
+    .detailed-story .carousel-inner .item img {
+        height:200px;
+    } */
 
 }
 
@@ -964,34 +986,71 @@ footer.sitepage-footer a{color:#fff;}
         top: 40%;
     }
 
+    .detailed-story .carousel-inner .item {
+        height: 230px;
+    }
+    .detailed-story .carousel-inner .item img {
+        height: 230px;
+    }
+
 }
+
+
+@media (min-width: 450px) and (max-width: 480px){
+    .service-image:hover > .service-logo, .service-image.active-animate > .service-logo{
+        padding: 100px 0;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 449px){
+    .service-image:hover > .service-logo, .service-image.active-animate > .service-logo{
+        padding: 80px 0;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 400px){
+    .service-image:hover > .service-logo, .service-image.active-animate > .service-logo{
+        padding: 70px 0;
+    }
+}
+
 
 @media (max-width: 360px){
     .logo img {
         width:100%;
     }
     .service-image:hover > .service-logo{
-        padding: 50px 0;
+        padding: 60px 0;
     }
     .add-comment h3, .add-comment h3 span, .post-block h3 {
         font-size: 16px;
     }
 
     .detailed-story .carousel-inner .item {
-        height:auto;
+        height:200px;
     }
     .detailed-story .carousel-inner .item img {
-        height:auto;
+        height:200px;
+    }
+
+    .banner {
+        display:none;
     }
 
     .banner.mobile {
         display: block;
     }
 
+    .full-width-box.inner h1 {
+        visibility: hidden;
+    }
+
 }
 
 @media (max-width: 320px){
-
+    .service-image:hover > .service-logo, .service-image.active-animate > .service-logo{
+        padding: 50px 0;
+    }
 }
 
 .infinite-spinner {
