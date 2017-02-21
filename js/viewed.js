@@ -39,10 +39,17 @@ var visit = (function(){
         }
     };
 
-    visit.clear = function (elem) {
+    visit.clear = function (removeButton) {
         var stored = store.get(conf.key);
-        delete stored[jQuery(elem).attr('parent-id')];
-        store.set(conf.key, stored);
+        var itemId = jQuery(removeButton).attr('parent-id');
+        var elem = jQuery("div[id='"  + itemId + "']")[0];
+        if (elem) {
+            delete stored[itemId];
+            store.set(conf.key, stored);
+            jQuery(elem).fadeOut(400, function () {
+                jQuery(elem).remove();
+            });
+        }
     };
 
     visit.renderIndex = function (animated) {
@@ -114,7 +121,7 @@ var visit = (function(){
             title: jQuery("#title").text(),
             date: jQuery("#date").text(),
             visited: new Date(),
-            category: jQuery("#category").text().split(' ')[0]
+            category: jQuery("#category").text().trim().split(" ")[0]
         }
     }
 

@@ -386,6 +386,7 @@ Also here is a Markdown cheat sheet dedicated to Andrzej.
 
         <script src="/js/lib/bootstrap.min.js"></script>
         <script src="/js/lib/store.min.js"></script>
+        <script src="/js/lib/jquery.viewport.js"> </script>
         <script src="/js/falseRver.js"></script>
         <script src="/js/viewed.js"></script>
         <!-- <script src="/js/lib/infinite-jekyll.js"></script> -->
@@ -396,6 +397,32 @@ Also here is a Markdown cheat sheet dedicated to Andrzej.
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="/js/lib/ie10-viewport-bug-workaround.js"></script>
 
+        <!-- Mobile category animation -->
+
+        <script type="text/javascript">
+            $(function() {
+                $.fn.calculateAnimateStates = function() {
+                    if($(window).width() <= 480) {
+                        $('.row').find('.service-type').each(function(i, e) {
+                            var elem = $(this);
+                            if(elem.find('.service-logo img').is(':in-viewport')) {
+                                setTimeout(function() {
+                                    elem.find('.service-image').addClass("active-animate");
+                                }, 300);
+                            }
+                            else {
+                                elem.find('.service-image').removeClass("active-animate");
+                            }
+                        });
+                    }
+                }
+                $.fn.calculateAnimateStates();
+
+                $( window ).scroll(function() {
+                    $.fn.calculateAnimateStates();
+                });
+            });
+        </script>
 
 
     </body>

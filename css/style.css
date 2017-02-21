@@ -372,7 +372,7 @@ footer.sitepage-footer a{color:#fff;}
     font-size: 16px;
     color: #fff;
 }
-.relationship input[type="text"]:focus {
+.relationship input[type="text"]:focus, .relationship input[type="email"]:focus {
     background: #3f6f83;
 }
 .button {

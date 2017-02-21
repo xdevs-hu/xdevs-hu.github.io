@@ -33,6 +33,9 @@
     <div class="banner">
         <img src="/images/banner.jpg" alt="banner">
     </div>
+    <div class="banner mobile">
+        <img src="/images/banner-home-m.jpg" alt="banner">
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
@@ -62,23 +65,6 @@
         
             <div class="col-xs-6 col-sm-4 col-md-4">
                 <div class="service-type">
-                    <a href="/chat.html">
-                        <div class="service-image">
-                            <img src="/images/service-2.jpg" alt="service">
-                            <div class="service-logo animated slideInDown">
-                                <img src="/images/service-2-logo.png" alt="logo">
-                            </div>
-                        </div>
-                    </a>
-                    <h1>Blaab.la</h1>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                    </p>
-                </div>
-            </div>
-        
-            <div class="col-xs-6 col-sm-4 col-md-4">
-                <div class="service-type">
                     <a href="/hdlive.html">
                         <div class="service-image">
                             <img src="/images/service-1.jpg" alt="service">
@@ -88,6 +74,23 @@
                         </div>
                     </a>
                     <h1>HD Live</h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    </p>
+                </div>
+            </div>
+        
+            <div class="col-xs-6 col-sm-4 col-md-4">
+                <div class="service-type">
+                    <a href="/chat.html">
+                        <div class="service-image">
+                            <img src="/images/service-2.jpg" alt="service">
+                            <div class="service-logo animated slideInDown">
+                                <img src="/images/service-2-logo.png" alt="logo">
+                            </div>
+                        </div>
+                    </a>
+                    <h1>Blaab.la</h1>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                     </p>
@@ -209,6 +212,7 @@
 
         <script src="/js/lib/bootstrap.min.js"></script>
         <script src="/js/lib/store.min.js"></script>
+        <script src="/js/lib/jquery.viewport.js"> </script>
         <script src="/js/falseRver.js"></script>
         <script src="/js/viewed.js"></script>
         <!-- <script src="/js/lib/infinite-jekyll.js"></script> -->
@@ -219,6 +223,32 @@
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="/js/lib/ie10-viewport-bug-workaround.js"></script>
 
+        <!-- Mobile category animation -->
+
+        <script type="text/javascript">
+            $(function() {
+                $.fn.calculateAnimateStates = function() {
+                    if($(window).width() <= 480) {
+                        $('.row').find('.service-type').each(function(i, e) {
+                            var elem = $(this);
+                            if(elem.find('.service-logo img').is(':in-viewport')) {
+                                setTimeout(function() {
+                                    elem.find('.service-image').addClass("active-animate");
+                                }, 300);
+                            }
+                            else {
+                                elem.find('.service-image').removeClass("active-animate");
+                            }
+                        });
+                    }
+                }
+                $.fn.calculateAnimateStates();
+
+                $( window ).scroll(function() {
+                    $.fn.calculateAnimateStates();
+                });
+            });
+        </script>
 
 
     </body>
