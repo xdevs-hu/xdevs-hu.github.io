@@ -23,31 +23,34 @@ var visit = (function(){
         var post = getPageObject();
         if (!stored) {
             stored = {};
-            stored[post.id] = post;
+            stored[post.url] = post;
             store.set(conf.key, stored);
         } else {
             var arr = visit.getAll();
             if (arr.length === conf.maxStore) {
-                delete stored[arr.reverse()[0].id];
+                delete stored[arr.reverse()[0].url];
             }
-            if (stored[post.id]) {
-                delete stored[post.id];
+            if (stored[post.url]) {
+                delete stored[post.url];
             }
-            stored[post.id] = post;
+            stored[post.url] = post;
             store.set(conf.key, stored);
-
         }
     };
 
-    visit.clear = function (removeButton) {
+    visit.clear = function (removeButton, e, callback) {
+        e.stopPropagation();
         var stored = store.get(conf.key);
-        var itemId = jQuery(removeButton).attr('parent-id');
-        var elem = jQuery("div[id='"  + itemId + "']")[0];
+        var itemUrl = jQuery(removeButton).attr('parent-id');
+        var elem = jQuery("div[target='"  + itemUrl + "']")[0];
         if (elem) {
-            delete stored[itemId];
+            delete stored[itemUrl];
             store.set(conf.key, stored);
             jQuery(elem).fadeOut(400, function () {
                 jQuery(elem).remove();
+                if (callback) {
+                    callback();
+                }
             });
         }
     };
@@ -117,12 +120,31 @@ var visit = (function(){
 
     function getPageObject() {
         return {
-            id :  window.location.pathname,
+            id: getNextValId(window.location.pathname),
+            url :  window.location.pathname,
             title: jQuery("#title").text(),
             date: jQuery("#date").text(),
             visited: new Date(),
             category: jQuery("#category").text().trim().split(" ")[0]
         }
+    }
+
+    function getNextValId(urlIn) {
+        var map = store.get(conf.key);
+        var arr = visit.getAll();
+        var result = 1;
+        if (arr) {
+            if (!map[urlIn]) {
+                for (var i = 0; i < conf.limit; i++) {
+                    if (!arr[i]) {
+                        result = i+1;
+                    }
+                }
+            } else {
+                result = map[urlIn].id;
+            }
+        }
+        return result;
     }
 
     return visit;

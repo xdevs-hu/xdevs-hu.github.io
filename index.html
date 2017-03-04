@@ -65,11 +65,12 @@
         
             <div class="col-xs-6 col-sm-4 col-md-4">
                 <div class="service-type">
-                    <a href="/hdlive.html">
                         <div class="service-image">
                             <img src="/images/service-1.jpg" alt="service">
                             <div class="service-logo animated slideInDown">
-                                <img src="/images/service-1-logo.png" alt="logo">
+                                <a href="/hdlive.html">
+                                    <img src="/images/service-1-logo.png" alt="logo">
+                                </a>
                             </div>
                         </div>
                     </a>
@@ -82,11 +83,12 @@
         
             <div class="col-xs-6 col-sm-4 col-md-4">
                 <div class="service-type">
-                    <a href="/chat.html">
                         <div class="service-image">
                             <img src="/images/service-2.jpg" alt="service">
                             <div class="service-logo animated slideInDown">
-                                <img src="/images/service-2-logo.png" alt="logo">
+                                <a href="/chat.html">
+                                    <img src="/images/service-2-logo.png" alt="logo">
+                                </a>
                             </div>
                         </div>
                     </a>
@@ -99,11 +101,12 @@
         
             <div class="col-xs-6 col-sm-4 col-md-4">
                 <div class="service-type">
-                    <a href="/iot.html">
                         <div class="service-image">
                             <img src="/images/service-3.jpg" alt="service">
                             <div class="service-logo animated slideInDown">
-                                <img src="/images/service-3-logo.png" alt="logo">
+                                <a href="/iot.html">
+                                    <img src="/images/service-3-logo.png" alt="logo">
+                                </a>
                             </div>
                         </div>
                     </a>
@@ -224,7 +227,6 @@
         <script src="/js/lib/ie10-viewport-bug-workaround.js"></script>
 
         <!-- Mobile category animation -->
-
         <script type="text/javascript">
             $(function() {
                 $.fn.calculateAnimateStates = function() {
@@ -244,12 +246,10 @@
                 }
                 $.fn.calculateAnimateStates();
 
-                $( window ).scroll(function() {
+                $(window).scroll(function() {
                     $.fn.calculateAnimateStates();
                 });
             });
         </script>
-
-
     </body>
 </html>
