@@ -1,0 +1,12 @@
+---
+---
+{
+    {% for post in site.posts %}
+        "{{ post.id }}" : {
+            "title" : "{{post.title}}",
+            "date" : "{{post.date}}"
+        }
+
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+}

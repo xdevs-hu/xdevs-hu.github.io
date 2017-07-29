@@ -1,0 +1,34 @@
+ <div class="container">
+     <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <div class="language-block">
+                <ul>
+                    <li><a href="javascript:;">Hu</a></li>
+                    <li><a href="javascript:;">En</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row service">
+        {% for link in site.data.navigation.links %}
+            <div class="col-xs-6 col-sm-4 col-md-4">
+                <div class="service-type">
+                        <div class="service-image">
+                            <img src="/images/{{link.image}}" alt="service">
+                            <a href="{{link.link}}">
+                                <div class="service-logo animated slideInDown">
+                                    <img src="/images/{{link.logo}}" alt="logo">
+                                </div>
+                            </a>
+                        </div>
+                    </a>
+                    <h1>{{link.name}}</h1>
+                    <p>
+                        {{link.description}}
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

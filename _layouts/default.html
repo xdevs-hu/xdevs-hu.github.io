@@ -1,0 +1,79 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{ site.title }}</title>
+        <link rel="icon" href="/images/favicon.ico">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+        <link href="/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/ie10-viewport-bug-workaround.css" >
+
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="/css/animate.css" type="text/css">
+        <link rel="stylesheet" href="/css/font-awesome.css" type="text/css">
+        <link rel="stylesheet" href="/css/style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Sans:400,400i,700,700i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="/js/html5shiv.min.js"></script>
+        <script src="/js/respond.min.js"></script>
+        <![endif]-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <!-- <script src="/js/search.min.js"></script> -->
+        <script src="/js/lib/jquery.loadTemplate.min.js"></script>
+        <script src="https://embed.widgetpack.com/widget.js" async></script>
+
+    </head>
+    <body {% if page.id %} onload="visit.visit();visit.renderPost()"
+          {% elsif page.categories or page.category %} onload="visit.renderPost();"
+          {% else %} onload="visit.renderIndex(true)" {% endif %}
+    >
+        <div id="sitepage">
+            {{ content }}
+            {% include footer.html %}
+        </div>
+
+        <script src="/js/lib/bootstrap.min.js"></script>
+        <script src="/js/lib/store.min.js"></script>
+        <script src="/js/lib/jquery.viewport.js"> </script>
+        <script src="/js/falseRver.js"></script>
+        <script src="/js/viewed.js"></script>
+        <!-- <script src="/js/lib/infinite-jekyll.js"></script> -->
+        <script src="/js/lib/jquery.noty.packaged.min.js"> </script>
+
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="/js/lib/ie10-viewport-bug-workaround.js"></script>
+
+        <!-- Mobile category animation -->
+        <script type="text/javascript">
+            $(function() {
+                $.fn.calculateAnimateStates = function() {
+                    if($(window).width() <= 480) {
+                        $('.row').find('.service-type').each(function(i, e) {
+                            var elem = $(this);
+                            if(elem.find('.service-logo img').is(':in-viewport')) {
+                                setTimeout(function() {
+                                    elem.find('.service-image').addClass("active-animate");
+                                }, 300);
+                            }
+                            else {
+                                elem.find('.service-image').removeClass("active-animate");
+                            }
+                        });
+                    }
+                }
+                $.fn.calculateAnimateStates();
+
+                $(window).scroll(function() {
+                    $.fn.calculateAnimateStates();
+                });
+            });
+        </script>
+    </body>
+</html>

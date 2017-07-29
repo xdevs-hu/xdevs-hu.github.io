@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div id="navbar" class="nav navbar-collapse collapse">
+            <ul class="nav navbar-nav text-center">
+                {% for link in site.data.navigation.links %}
+                {% assign class = "" %}
+                {% if link.highlight %}
+                {% assign class = class | append: " highlight" %}
+                {% endif %}
+
+                {% if link.link == page.url %}
+                {% assign class = class | append: " active" %}
+                {% endif %}
+
+                <li><a href="{{ site.baseurl }}{{ link.link }}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a></li>
+
+                {% endfor %}
+            </ul>
+            <ul class="nav navbar-nav navbar-right" >
+                <form class="navbar-form" action="/search" method="get">
+                    <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
+                </form>
+            </ul>
+        </div>
+    </div>
+</nav>

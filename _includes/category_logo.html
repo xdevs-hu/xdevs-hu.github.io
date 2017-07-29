@@ -1,0 +1,11 @@
+{% assign cat = include.category_to_load | remove: '.' | remove: ' ' %}
+{% assign cat_url = site.data.external[cat] %}
+<div class="row">
+    <a href="{{ cat_url }}">
+        <div class="col-sm-12 col-md-12">
+            <div class="category-img {{ cat }}"></div>
+            <h3>Kattins ide</h3>
+            <span>és próbáld ki</span>
+        </div>
+    </a>
+</div>

@@ -1,0 +1,16 @@
+links:
+- name: HD Live
+  link: /hdlive.html
+  image: service-1.jpg
+  logo: service-1-logo.png
+  description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+- name: Blaab.la
+  link: /chat.html
+  image: service-2.jpg
+  logo: service-2-logo.png
+  description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+- name: Internet of Things
+  link: /iot.html
+  image: service-3.jpg
+  logo: service-3-logo.png
+  description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an

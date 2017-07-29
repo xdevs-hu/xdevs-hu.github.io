@@ -1,0 +1,53 @@
+---
+layout: default
+---
+{% include header.html %}
+<script onload="visit.renderPost();"></script>
+<div id="main">
+    <div class="container">
+        <div class="row">
+            {{content}}
+            <div class="col-sm-5 col-md-4">
+                <div class="post-widget">
+                    {% include category_logo.html category_to_load = page.category %}
+                    <div class="recent-post" id="recent-outer-container">
+                        <h3>Legutóbbi bejegyzések</h3>
+                            <div id="recent-container">
+                            </div>
+                        <div class="row" id="recent-more">
+                            <div class="col-sm-12 col-md-12">
+                                <a class="clickable" onclick="moreRecent()">
+                                    <div class="more">
+                                        <h4><i class="fa fa-angle-down" aria-hidden="true"></i></h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <input type="text" class="search-nav" placeholder="Keresés"/>
+                        </div>
+                    </div>
+
+                    <div class="recent-post initially-hidden" id="viewed-outer-container">
+                        <h3>Megtekintettek</h3>
+                        <div id="viewed-container">
+                        </div>
+                        <div class="row initially-hidden" id="viewed-more">
+                            <div class="col-sm-12 col-md-12">
+                                <a class="clickable" onclick="visit.renderPost(true)">
+                                    <div class="more">
+                                        <h4><i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        </h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

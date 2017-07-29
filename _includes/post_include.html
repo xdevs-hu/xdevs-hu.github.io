@@ -1,0 +1,67 @@
+<script type="text/javascript">
+    var wpac_init = window.wpac_init || [];
+</script>
+<div class="col-sm-7 col-md-8">
+    {% for post in site.posts %}
+        {% if post.categories contains include.category %}
+            <div class="post-block">
+                <div class="post-block-content">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <h3> {{post.title | strip_html}} </h3>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <span class="post-date">{{post.date | date: "%Y. %m. %d."}}</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 col-md-3">
+                            <div class="post-image">
+                                <img src="/images/post-image.jpg" alt="post image">
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-md-9">
+                            <p>
+                                {{ post.content | strip_html | strip_new_lines | truncate: 380}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-offset-6 col-sm-6 col-md-offset-6 col-md-6">
+                            <div class="summary">
+                                                            <span class="view">
+                                                                <i class="fa fa-eye"></i> 1700
+                                                            </span>
+                                <i class="fa fa-commenting-o"></i> 112
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{post.url}}">
+                    <div class="details-nav">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12">
+                                Részletek
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <script type="text/javascript">
+                wpac_init.push({widget: 'CommentCount', id: 3130, url: "{{site.url}}{{post.url}}"});
+            </script>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<script type="text/javascript">
+    (function() {
+        if ('WIDGETPACK_LOADED' in window) return;
+        WIDGETPACK_LOADED = true;
+        var mc = document.createElement('script');
+        mc.type = 'text/javascript';
+        mc.async = true;
+        mc.src = 'https://embed.widgetpack.com/widget.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+</script>
