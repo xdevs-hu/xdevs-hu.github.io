@@ -1,10 +1,11 @@
 ---
 title: Happy demo
-date: 2017-08-04 16:17
+date: '2017-08-04T14:18:23.135Z'
 carousel:
 - "/images/service-1.jpg"
-- "/images/service-2.jpg"
-- "/images/service-3.jpg"
 categories: iot
 layout: post
 ---
+
+
+Texty text as a test.
