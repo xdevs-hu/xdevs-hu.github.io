@@ -1,18 +1,23 @@
 title: XDevs Home Page
 email: xdevs.hu@gmail.com
+encoding: UTF-8
+kramdown:
+ input: GFM
+ hard_wrap: false
+future: true
+jailed: false
+gfm_quirks: paragraph_end
+
 description: >
   xdevs page description placeholder
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://xdevs-hu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-#url: http://localhost:4000
-twitter_username: jekyllrb
-github_username:  jekyll
+baseurl: ""
+url: "https://xdevs-hu.github.io"
+github_username:  xdevs-hu
 
 mail_service_url: http://192.168.1.157:9988
 
-# Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
 #  - jekyll-lunr-js-search
 
